@@ -8,10 +8,11 @@
   </head>
   <body>
     <section class="container">
-      <div class="left-side">
-        <div class="sidebar"></div>
+      <div class="left-side"><div class="logo">
+        <img src="odin-lined.png" alt="logo">
+        <p>Odin</p>
       </div>
-
+    </div>
       <div class="right-side">
         <div class="first-box">
           <p>
@@ -22,9 +23,9 @@
           </p>
         </div>
         <div class="second-box">
-          <h1 class="form-header">Let's do this!</h1>
+          <span class="form-header">Let's do this!</span>
           <form action="#">
-            
+            <div class="form">
             <div class="get-data">
               <label for="first-name">FIRST NAME</label>
               <input type="text" name="first-name" id="first-name" />
@@ -47,18 +48,26 @@
 
             <div class="get-data">
               <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" />
+              <input type="password" name="password" id="password" minlength="8"/>
             </div>
 
             <div class="get-data">
               <label for="c-pass">CONFIRM PASSWORD</label>
-              <input type="password" name="c-pass" id="c-pass" />
+              <input type="password" name="c-pass" id="c-pass" minlength="8"/>
             </div class="get-data">
-
-
+            
+            </div>
           </form>
         </div>
-        <div class="last-box"></div>
+        <div class="last-box">
+          <div>
+            
+            <button class="submit-btn">Create Account</button>
+          </div>
+          <div>
+            <p class="log-in">Already have an account?<a href="#"> Log in</a></p>
+          </div>
+        </div>
       </div>
     </section>
   </body>
